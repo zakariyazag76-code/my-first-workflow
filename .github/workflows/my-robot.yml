@@ -1,9 +1,15 @@
-name: My First Workflow
+name: WhatsApp Bot Simulator
 on: [push]
 
 jobs:
-  say-hello:
+  whatsapp-reply:
     runs-on: ubuntu-latest
     steps:
-      - name: Greet the user
-        run: echo "Hello! Your workflow is working perfectly!"
+      - name: Simulate Receiving Message
+        run: |
+          CLIENT_MESSAGE="السلام عليكم"
+          echo "الميساج اللي صيفط الكليان: $CLIENT_MESSAGE"
+          
+          echo "الروبوت كيجوب أوتوماتيكياً:"
+          echo "إذا كنت تبحث عن زكرياء صاحب الحساب فهو مشغول حالياً."
+
